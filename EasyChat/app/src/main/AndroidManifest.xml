@@ -13,6 +13,16 @@
         android:theme="@style/Theme.EasyChat"
         tools:targetApi="31">
         <activity
+            android:name=".LoginUsernameActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login_username"
+            android:theme="@style/Theme.EasyChat" />
+        <activity
+            android:name=".LoginOtpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login_otp"
+            android:theme="@style/Theme.EasyChat" />
+        <activity
             android:name=".LoginPhoneNumberActivity"
             android:exported="false"
             android:label="@string/title_activity_login_phone_number"
@@ -28,7 +38,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

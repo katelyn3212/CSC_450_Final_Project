@@ -10,33 +10,33 @@ public class UserModel {
     public UserModel() {
     }
 
-    public UserModel(String phone, String username, Timestamp createdTimeStamp){
+    public UserModel(String phone, String username, Timestamp createdTimeStamp) {
         this.phone = phone;
         this.username = username;
         this.createdTimeStamp = createdTimeStamp;
     }
 
-    public String getPhone(){
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone){
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    public String getUsername(){
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username){
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public Timestamp getCreatedTimeStamp(){
+    public Timestamp getCreatedTimeStamp() {
         return createdTimeStamp;
     }
 
-    public void setCreatedTimeStamp(Timestamp createdTimeStamp){
+    public void setCreatedTimeStamp(Timestamp createdTimeStamp) {
         this.createdTimeStamp = createdTimeStamp;
     }
 }

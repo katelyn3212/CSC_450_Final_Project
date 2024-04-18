@@ -37,7 +37,7 @@ class LoginUsernameActivity : ComponentActivity() {
         letMeInBtn = findViewById(R.id.login_let_me_in_btn)
         progressBar = findViewById(R.id.login_progress_bar)
 
-        phoneNumber = intent.getStringExtra("phone").toString()
+        phoneNumber = intent.getStringExtra("phone")!!
         getUsername()
 
         letMeInBtn.setOnClickListener {
@@ -68,12 +68,15 @@ class LoginUsernameActivity : ComponentActivity() {
 
    private fun getUsername(){
         setInProgress(true)
-        FirebaseUtil.currentUserDetails().get().addOnCompleteListener { task ->
+        FirebaseUtil.currentUserDetails().get().addOnCompleteListener{ task ->
             setInProgress(false)
-            if (task.isSuccessful) {
-                userModel = task.result?.toObject(UserModel::class.java) ?: UserModel()
-                userModel.let {
-                    usernameInput.setText(it.username)
+            if (task.isSuccessful){
+                val documentSnapshot = task.result
+                if (documentSnapshot != null){
+                    val userModel: UserModel? = documentSnapshot.toObject(UserModel:: class.java)
+                    if (userModel!= null){
+                        usernameInput.setText(userModel.username)
+                    }
                 }
             }
         }

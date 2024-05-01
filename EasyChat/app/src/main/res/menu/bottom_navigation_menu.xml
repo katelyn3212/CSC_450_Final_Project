@@ -3,10 +3,12 @@
 
     <item android:title="Chats"
         android:icon="@drawable/chat_icon"
+        android:iconTint="@color/light_gray"
         android:id="@+id/menu_chat"
         />
     <item android:title="Profile"
         android:icon="@drawable/person_icon"
+        android:iconTint="@color/light_gray"
         android:id="@+id/menu_profile"
         />
 </menu>

@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         chatFragment = new ChatFragment();
@@ -43,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 if(menuItem.getItemId() == R.id.menu_chat){
                     getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, chatFragment).commit();
+                }
+                if(menuItem.getItemId() == R.id.menu_profile){
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, profileFragment).commit();
                 }
                 return true;
             }

@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 public class ChatFragment extends Fragment {
 
     public ChatFragment() {
-        // Required empty public constructor
     }
 
 

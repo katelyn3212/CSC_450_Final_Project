@@ -1,5 +1,7 @@
 [versions]
 agp = "8.3.1"
+firebaseMessagingKtx = "23.4.1"
+firebaseStorageKtx = "20.3.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -16,6 +18,8 @@ firebaseFirestore = "24.11.1"
 runner = "1.5.2"
 
 [libraries]
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
+firebase-storage-ktx = { module = "com.google.firebase:firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

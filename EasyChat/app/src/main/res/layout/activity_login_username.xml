@@ -21,12 +21,13 @@
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
             android:backgroundTint="@color/light_gray">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="1"/>
         </RelativeLayout>
         <RelativeLayout
@@ -35,12 +36,13 @@
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
             android:backgroundTint="@color/light_gray">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="2"/>
         </RelativeLayout>
         <RelativeLayout
@@ -49,13 +51,14 @@
             android:layout_margin="10dp"
             android:background="@drawable/circular_bg"
             android:backgroundTint="@color/my_primary">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:text="3"
                 android:textColor="@color/white"
-                android:textSize="18dp"
-                android:text="3"/>
+                android:textSize="18sp" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -64,7 +67,9 @@
         android:layout_height="150dp"
         android:src="@drawable/person_icon"
         app:tint="@color/my_primary"
-        android:layout_weight="20"/>
+        android:layout_weight="20"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +77,6 @@
         android:layout_gravity="center_vertical"
         android:letterSpacing="0.08"
         android:textStyle="bold"
-        android:textColor="@color/black"
         android:textSize="25sp"
         android:layout_weight="5"/>
 
@@ -83,17 +87,20 @@
         android:gravity="center"
         android:layout_weight="5">
 
+
+
         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:padding="10dp"
             android:hint="Username"
-            android:inputType = "text"
+            android:inputType="text"
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="5dp"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:id="@+id/login_username"/>
+            android:id="@+id/login_username"
+            />
+
     </LinearLayout>
 
     <LinearLayout

@@ -5,15 +5,18 @@ import com.google.firebase.Timestamp;
 public class UserModel {
     private String phone;
     private String username;
-    private Timestamp createdTimeStamp;
+    private Timestamp createdTimestamp;
+    private String userId;
+    private String fcmToken;
 
     public UserModel() {
     }
 
-    public UserModel(String phone, String username, Timestamp createdTimeStamp) {
+    public UserModel(String phone, String username, Timestamp createdTimestamp,String userId) {
         this.phone = phone;
         this.username = username;
-        this.createdTimeStamp = createdTimeStamp;
+        this.createdTimestamp = createdTimestamp;
+        this.userId = userId;
     }
 
     public String getPhone() {
@@ -32,11 +35,27 @@ public class UserModel {
         this.username = username;
     }
 
-    public Timestamp getCreatedTimeStamp() {
-        return createdTimeStamp;
+    public Timestamp getCreatedTimestamp() {
+        return createdTimestamp;
     }
 
-    public void setCreatedTimeStamp(Timestamp createdTimeStamp) {
-        this.createdTimeStamp = createdTimeStamp;
+    public void setCreatedTimestamp(Timestamp createdTimestamp) {
+        this.createdTimestamp = createdTimestamp;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getFcmToken() {
+        return fcmToken;
+    }
+
+    public void setFcmToken(String fcmToken) {
+        this.fcmToken = fcmToken;
     }
 }

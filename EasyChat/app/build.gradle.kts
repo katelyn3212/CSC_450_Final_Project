@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation (libs.firebase.storage.ktx)
+    implementation (libs.firebase.messaging.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
@@ -76,5 +78,11 @@ dependencies {
     //dependencies for Firebase
     implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
     implementation("com.google.firebase:firebase-auth")
-
+    implementation ("com.firebaseui:firebase-ui-firestore:8.0.2")
+    //image picker dependency
+    implementation ("com.github.dhaval2404:imagepicker:2.1")
+    //fetch images dependency
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    //notification protocol dependency
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 }
